@@ -7,24 +7,39 @@
 
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 50px;
   background-color: burlywood;
   height: 97vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
 }
 
 .text {
   border: solid 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(241, 161, 57);
   padding: 5px;
 }
 
 .btn {
-  background-color: rgb(241, 161, 57);
+  background-color: rgb(146, 84, 4);
   border: solid 1px rgba(0, 0, 0, 0.5);
   height: 29px;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
 }
 .input {
-  width: 175px;
+  width: 200px;
   height: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+}
+.container {
+  width: 25%;
+  height: 50%;
+  margin-left: 50px;
+  text-align: center;
+}
+.photo {
+  width: 60%;
+  height: 100%;
+  align-self: self-end;
 }
