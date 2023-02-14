@@ -15,19 +15,25 @@ function getRandomNumber(max) {
 
 const number = getRandomNumber(100);
 
+// Función modificar texto pistas
+
+function insertClue(text) {
+  textClue.innerHTML = text
+}
+
 // Función comparar nº aleatorio y nº usuaria
 
 function compareNumbers() {
   const inputValue = parseInt(inputElement.value)
   console.log(number)
   if (inputValue === number) {
-    textClue.innerHTML = 'Has ganado campeona!! 🎉'
+    insertClue('Has ganado campeona!! 🎉')
   } else if (inputValue > 100 || inputValue < 1) {
-    textClue.innerHTML = 'El número debe estar entre 1 y 100'
+    insertClue('El número debe estar entre 1 y 100')
   } else if (inputValue > number) {
-    textClue.innerHTML = 'Demasiado alto ⬇️'
+    insertClue('Demasiado alto ⬇️')
   } else if (inputValue < number) {
-    textClue.innerHTML = 'Demasiado bajo ⬆️'
+    insertClue('Demasiado bajo ⬆️')
   }
 }
 // Función contador
