@@ -1,0 +1,30 @@
+:root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  height: 97vh;
+}
+
+.text {
+  border: solid 3px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.btn {
+  background-color: rgb(241, 161, 57);
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  height: 29px;
+}
+.input {
+  width: 175px;
+  height: 25px;
+}

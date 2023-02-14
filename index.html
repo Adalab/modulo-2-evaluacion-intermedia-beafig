@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1><bold>Adivina el número</bold></h1>
-    <p>Introduce aquí tu número</p>
-    <form action="#">
-      <input type="number" class="js-input" />
-      <input type="button" class="js-btn" value="Prueba" />
-    </form>
-    <p>Pista: Escribe el número y dale a Prueba</p>
-    <p>Número de intentos: 0</p>
+    <main class="main">
+      <h1><bold>Adivina el número</bold></h1>
+      <p>Introduce aquí tu número:</p>
+      <form action="#">
+        <input
+          type="number"
+          placeholder="Introduce un nº de 1 al 100"
+          class="input js-input"
+        />
+        <input type="button" class="btn js-btn" value="Prueba" />
+      </form>
+      <p class="text js-clue">Pista: Escribe el número y dale a Prueba</p>
+      <p class="text js-count">Número de intentos: 0</p>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>
