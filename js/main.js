@@ -8,7 +8,7 @@ const textClue = document.querySelector('.js-clue');
 const textCount = document.querySelector('.js-count');
 const photo = document.querySelector('.js-photo');
 const number = getRandomNumber(100);
-let count = 1;
+let count = 0;
 
 //Función número aleatorio
 
@@ -51,8 +51,9 @@ function compareNumbers() {
 
 // Función contador
 
-function counter(x) {
-  textCount.innerHTML = `Número de intentos: ${count++}`
+function counter() {
+  count++
+  textCount.innerHTML = `Número de intentos: ${count}`
 }
 
 
